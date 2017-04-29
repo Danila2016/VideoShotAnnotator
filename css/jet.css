@@ -1,0 +1,405 @@
+/* Classes for displaying a numerical value x (0 <= x <= 1) in color (jet color scheme) */
+.prob000
+{
+        background-color: #66c2a5 !important;
+}
+.prob001
+{
+        background-color: #71bea0 !important;
+}
+.prob002
+{
+        background-color: #7bbb9c !important;
+}
+.prob003
+{
+        background-color: #86b797 !important;
+}
+.prob004
+{
+        background-color: #90b392 !important;
+}
+.prob005
+{
+        background-color: #9baf8e !important;
+}
+.prob006
+{
+        background-color: #a5ac89 !important;
+}
+.prob007
+{
+        background-color: #b0a884 !important;
+}
+.prob008
+{
+        background-color: #baa47f !important;
+}
+.prob009
+{
+        background-color: #c5a17b !important;
+}
+.prob010
+{
+        background-color: #cf9d76 !important;
+}
+.prob011
+{
+        background-color: #da9971 !important;
+}
+.prob012
+{
+        background-color: #e4956d !important;
+}
+.prob013
+{
+        background-color: #ef9268 !important;
+}
+.prob014
+{
+        background-color: #f98e63 !important;
+}
+.prob015
+{
+        background-color: #f68e67 !important;
+}
+.prob016
+{
+        background-color: #ef8f6f !important;
+}
+.prob017
+{
+        background-color: #e79176 !important;
+}
+.prob018
+{
+        background-color: #df927d !important;
+}
+.prob019
+{
+        background-color: #d79385 !important;
+}
+.prob020
+{
+        background-color: #d0958c !important;
+}
+.prob021
+{
+        background-color: #c89693 !important;
+}
+.prob022
+{
+        background-color: #c0979b !important;
+}
+.prob023
+{
+        background-color: #b899a2 !important;
+}
+.prob024
+{
+        background-color: #b19aa9 !important;
+}
+.prob025
+{
+        background-color: #a99bb1 !important;
+}
+.prob026
+{
+        background-color: #a19db8 !important;
+}
+.prob027
+{
+        background-color: #999ebf !important;
+}
+.prob028
+{
+        background-color: #919fc7 !important;
+}
+.prob029
+{
+        background-color: #909fcb !important;
+}
+.prob030
+{
+        background-color: #969eca !important;
+}
+.prob031
+{
+        background-color: #9c9cca !important;
+}
+.prob032
+{
+        background-color: #a39bc9 !important;
+}
+.prob033
+{
+        background-color: #a999c9 !important;
+}
+.prob034
+{
+        background-color: #af98c8 !important;
+}
+.prob035
+{
+        background-color: #b696c7 !important;
+}
+.prob036
+{
+        background-color: #bc95c7 !important;
+}
+.prob037
+{
+        background-color: #c293c6 !important;
+}
+.prob038
+{
+        background-color: #c891c6 !important;
+}
+.prob039
+{
+        background-color: #cf90c5 !important;
+}
+.prob040
+{
+        background-color: #d58ec5 !important;
+}
+.prob041
+{
+        background-color: #db8dc4 !important;
+}
+.prob042
+{
+        background-color: #e28bc3 !important;
+}
+.prob043
+{
+        background-color: #e68bc2 !important;
+}
+.prob044
+{
+        background-color: #e290ba !important;
+}
+.prob045
+{
+        background-color: #dd96b2 !important;
+}
+.prob046
+{
+        background-color: #d99bab !important;
+}
+.prob047
+{
+        background-color: #d4a1a3 !important;
+}
+.prob048
+{
+        background-color: #d0a69b !important;
+}
+.prob049
+{
+        background-color: #cbac93 !important;
+}
+.prob050
+{
+        background-color: #c7b18c !important;
+}
+.prob051
+{
+        background-color: #c2b684 !important;
+}
+.prob052
+{
+        background-color: #bdbc7c !important;
+}
+.prob053
+{
+        background-color: #b9c174 !important;
+}
+.prob054
+{
+        background-color: #b4c76c !important;
+}
+.prob055
+{
+        background-color: #b0cc65 !important;
+}
+.prob056
+{
+        background-color: #abd25d !important;
+}
+.prob057
+{
+        background-color: #a7d755 !important;
+}
+.prob058
+{
+        background-color: #abd852 !important;
+}
+.prob059
+{
+        background-color: #b2d84f !important;
+}
+.prob060
+{
+        background-color: #b8d84d !important;
+}
+.prob061
+{
+        background-color: #bed84a !important;
+}
+.prob062
+{
+        background-color: #c4d847 !important;
+}
+.prob063
+{
+        background-color: #cad845 !important;
+}
+.prob064
+{
+        background-color: #d1d842 !important;
+}
+.prob065
+{
+        background-color: #d7d940 !important;
+}
+.prob066
+{
+        background-color: #ddd93d !important;
+}
+.prob067
+{
+        background-color: #e3d93a !important;
+}
+.prob068
+{
+        background-color: #ead938 !important;
+}
+.prob069
+{
+        background-color: #f0d935 !important;
+}
+.prob070
+{
+        background-color: #f6d933 !important;
+}
+.prob071
+{
+        background-color: #fcd930 !important;
+}
+.prob072
+{
+        background-color: #fed833 !important;
+}
+.prob073
+{
+        background-color: #fcd73a !important;
+}
+.prob074
+{
+        background-color: #fad541 !important;
+}
+.prob075
+{
+        background-color: #f9d448 !important;
+}
+.prob076
+{
+        background-color: #f7d24f !important;
+}
+.prob077
+{
+        background-color: #f5d156 !important;
+}
+.prob078
+{
+        background-color: #f3cf5d !important;
+}
+.prob079
+{
+        background-color: #f1ce65 !important;
+}
+.prob080
+{
+        background-color: #efcc6c !important;
+}
+.prob081
+{
+        background-color: #eecb73 !important;
+}
+.prob082
+{
+        background-color: #ecc97a !important;
+}
+.prob083
+{
+        background-color: #eac881 !important;
+}
+.prob084
+{
+        background-color: #e8c788 !important;
+}
+.prob085
+{
+        background-color: #e6c58f !important;
+}
+.prob086
+{
+        background-color: #e4c495 !important;
+}
+.prob087
+{
+        background-color: #e1c297 !important;
+}
+.prob088
+{
+        background-color: #ddc199 !important;
+}
+.prob089
+{
+        background-color: #dac09b !important;
+}
+.prob090
+{
+        background-color: #d6bf9d !important;
+}
+.prob091
+{
+        background-color: #d3be9f !important;
+}
+.prob092
+{
+        background-color: #cfbda2 !important;
+}
+.prob093
+{
+        background-color: #ccbba4 !important;
+}
+.prob094
+{
+        background-color: #c8baa6 !important;
+}
+.prob095
+{
+        background-color: #c5b9a8 !important;
+}
+.prob096
+{
+        background-color: #c1b8aa !important;
+}
+.prob097
+{
+        background-color: #beb7ac !important;
+}
+.prob098
+{
+        background-color: #bab5af !important;
+}
+.prob099
+{
+        background-color: #b7b4b1 !important;
+}
+.prob100
+{
+        background-color: #b3b3b3 !important;
+}

@@ -1,0 +1,55 @@
+
+#thumb
+{
+    /*background-image:url("test.jpg");*/
+    border:1px;
+    position:absolute;
+    left:0;
+    z-index:1;
+    pointer-events:none;  /*do not react to mouse events*/
+}
+
+div.timeline-event
+{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    font-size: 14pt;
+}
+
+div.timeline-event-selected
+{
+    border-bottom-width: 4px;
+}
+
+div.timeline-event-range
+{
+    /* #XXX border-style: solid; */
+    /* #XXX border-width: 1px; */
+    border-radius: 0; 
+    -moz-border-radius: 0;  /* For Firefox 3.6 and older */
+}
+
+div.timeline-event-content
+{
+    margin: 0;
+}
+
+.unlabeledShot
+{
+    background-color: #D5DDF6 !important;
+}
+
+
+#help table
+{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+#help td
+{
+    border: 1px solid gray;
+    padding: 10px;
+}
+

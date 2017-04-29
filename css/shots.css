@@ -1,0 +1,14 @@
+/* Highlight selected category */
+.selected_category{
+    background-color: lightgreen !important;
+}
+.selected_category_hard{
+    background-color: gray !important;
+}
+
+.multilocation{
+    background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVQYlWNYu3btf2Iww1BQOJwAAImJly20+TKNAAAAAElFTkSuQmCC
+    );
+    background-size: 250px;
+}    

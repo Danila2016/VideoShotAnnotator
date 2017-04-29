@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="js/timeline.js"></script>
+<script src="js/timeline_widget.js"></script>
+
+<script src="js/props_widget.js"></script>
+<script src="js/video_widget.js"></script>
+
+<script src="js/annotation.js"></script>
+<script src="js/soft_alert.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/timeline.css"></link>
+<link rel="stylesheet" type="text/css" href="css/video.css"></link>
+<link rel="stylesheet" type="text/css" href="css/jet.css"></link>
+<link rel="stylesheet" type="text/css" href="css/am.css"></link>
+<link rel='stylesheet' type='text/css' href='css/shots.css'></link>
+
+<script src="js/interface.js"></script>
+</head>
+
+<body>
+<h3 id="loading">Loading...</h3>
+
+<!-- Top buttons -->
+<button type="button" onclick="save_infos(event)" disabled title="Not available">
+    Save to server
+</button>
+<button type="button" onclick="revert_infos(event)">
+    Revert to server version
+</button>
+<!-- <a href="https://github.com/...">Instructions</a> -->
+<a href="javascript:void()" onclick="help()">Help</a>
+<button type="button" onclick="showPermanentLink(event)" >
+    Show permanent link
+</button>
+&nbsp;&nbsp;
+<span id="perm_link"></span>
+<span style="float:right">
+    <b> Zoom level </b>
+    <button onclick="setZoomLevel('subshot', event)" title="10 sec">
+        Subshot
+    </button>
+    <button onclick="setZoomLevel('shot', event)" title="1 min">
+        Shot
+    </button>
+    <button onclick="setZoomLevel('scene', event)" title="10 min">
+        Scene
+    </button>
+    <button onclick="setZoomLevel('video', event)" title="100 min">
+        Video
+    </button>
+</span>
+
+
+<div id="help" style="display:none">
+    <table width="50%"><tr><td>
+    <h3>Keyboard shortcuts</h3>
+    left / right       - navigate the video while paused <br/>
+    space              - play/pause<br/>
+    A / D              - previous/next segment <br/>
+    1,2                - start segment of importance 1 or 2 <br/>
+    Enter              - finish segment<br/>
+    delete             - clear the current category in the current shot<br/>
+    +/-                - increase/decrease playback rate <br/>
+    H                  - toggle "hardness",<br/>
+    O / P              - previous / next occurrence
+    </td></tr></table>
+</div>
+
+<div id="timeline"></div>
+
+<!-- Video properties -->
+<table width="100%">
+<tr>
+<td width="20%" valign="top" style="padding:10px">
+    <b align="left">Video Properties</b>
+    <br/>
+    <div class="commentbox"
+        style="width:100%; height=100%; overflow:auto"
+        onclick="editVideoComment(event)"
+        title="freeform">
+        <span id="video_comment"></span>
+        <br/>
+        <i style="color:gray"> Video comment </i>
+    </div>
+</td>
+<td width="80%" align="center">
+    <div id="video"></div>
+</td>
+</tr>
+</table>
+
+<!-- Control panel -->
+<div align="center" id="control_panel">
+<button type="button" onclick="insertSceneChange(event)" class="mybutton">
+    Begin Scene
+</button>
+<img onclick="removeSceneChange(event)"
+    src="css/img/deleteEvent.png" title="Remove scene change" width="26px" height="26px" class="mycross">
+</img>
+
+<span style="display: inline-block; height=40px" class="framedbox">
+<button type="button" onclick="prevSegment(event)" class="mybutton">
+    &lt;&lt;&lt; Previous shot
+</button>
+<button type="button" onclick="nextSegment(event)" class="mybutton">
+    Next shot &gt;&gt;&gt;
+</button>
+</span>
+
+<span style="display: inline-block; height=40px" class="framedbox">
+Playback speed
+<button id="x1" type="button" onclick="setSpeed(1)" class="mybutton">
+    Normal
+</button>
+
+<button id="x2" type="button" onclick="setSpeed(2)" class="mybutton">
+    Faster
+</button>
+
+<button id="x4" type="button" onclick="setSpeed(4)" class="mybutton">
+    Very fast
+</button>
+</span>
+
+<span style="display: inline-block; height=40px" class="framedbox">
+<button type="button" onclick="prevOccurence(event)" class="mybutton">
+    &lt;&lt;&lt; Previous occurence
+</button>
+<button type="button" onclick="nextOccurence(event)" class="mybutton">
+    Next occurence &gt;&gt;&gt;
+</button>
+</span>
+
+</div>
+
+<!-- Scene properties -->
+<div class="framedbox" style="display:none">
+    <table width="100%"><tr>
+    <td width="20%" valign="top" style="padding:10px">
+        <b align="left">Scene Properties + (dialog/action/mood)</b>
+        <br/>
+        <i> Multilocation scene </i>
+        <input type="checkbox" id="multilocation"
+            onchange="setMultilocation(event)">
+        </input> 
+        <br/>
+        <div class="commentbox"
+            style="width:100%; overflow:auto"
+            onclick="editSceneComment(event)"
+            title="who? where?"
+            >
+            <span id="scene_comment"></span>
+            <br/>
+            <i style="color:gray"> Scene comment </i>
+        </div>
+    </td>
+    <td width="80%" align="center">
+        <span id="scene_props"></span>
+    </td>
+    </tr></table>    
+</div>
+
+<!-- Shot properties -->
+<div class="framedbox">
+    <table width="100%"><tr>
+    <td width="20%" valign="top" style="padding:10px">
+        <b align="left">Shot Properties</b>
+        <br/>
+        <div class="commentbox"
+            style="width:100%; overflow:auto"
+            onclick="editShotComment(event)"
+            title="freeform">
+            <span id="shot_comment" style="background-color:yellow"></span>
+            <br/>
+            <i style="color:gray"> Shot comment </i>
+        </div>
+    </td>
+    <td width="80%" align="center">
+        <div id="shot_props" align="center">
+        </div>
+    </td>
+    </tr></table>
+</div>
+
+</body>
+</html>

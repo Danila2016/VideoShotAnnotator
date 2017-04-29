@@ -1,0 +1,132 @@
+{
+  "shot_tags": [
+    "raise-right", 
+    "raise-right", 
+    "raise-right", 
+    "raise-right", 
+    "hit raise-left", 
+    "raise-left", 
+    "raise-left", 
+    "raise-left", 
+    "", 
+    "hit?"
+  ], 
+  "scene_characters": [
+    ""
+  ], 
+  "scene_types": [
+    ""
+  ], 
+  "video_comment": "", 
+  "importance": [
+    0, 
+    0, 
+    0, 
+    0, 
+    0, 
+    0, 
+    0, 
+    0, 
+    0, 
+    0
+  ], 
+  "__fps": 25, 
+  "shot_importance": [
+    [
+      0, 
+      0, 
+      1
+    ], 
+    [
+      0, 
+      0, 
+      1
+    ], 
+    [
+      0, 
+      0, 
+      1
+    ], 
+    [
+      0, 
+      0, 
+      1
+    ], 
+    [
+      1, 
+      1, 
+      0
+    ], 
+    [
+      0, 
+      1, 
+      0
+    ], 
+    [
+      0, 
+      1, 
+      0
+    ], 
+    [
+      0, 
+      1, 
+      0
+    ], 
+    [
+      0, 
+      0, 
+      0
+    ], 
+    [
+      1, 
+      0, 
+      0
+    ]
+  ], 
+  "scene_comments": [
+    ""
+  ], 
+  "segm_ends": [
+    10, 
+    20, 
+    30, 
+    40, 
+    50, 
+    60, 
+    70, 
+    80, 
+    90, 
+    100
+  ], 
+  "shot_comments": [
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    ""
+  ], 
+  "scene_tags": [
+    ""
+  ], 
+  "segm_begins": [
+    0, 
+    10, 
+    20, 
+    30, 
+    40, 
+    50, 
+    60, 
+    70, 
+    80, 
+    90
+  ], 
+  "scene_ends": [
+    100
+  ], 
+  "video_tags": "prop:fps=25.000"
+}
