@@ -2,7 +2,7 @@
 
 <br>
 
-## UNDER CONSTRUCTION. USE ON YOUR OWN RISK!
+## UNDER CONSTRUCTION!
 
 <br>
 
@@ -52,12 +52,10 @@ The easiest shot annotation mode is called **Single shot annotation**.
 In this mode, the annotation is performed for 1 shot and 1 category at a time.
 Make sure, that the **Single shot annotation** checkbox is ticked.
 
-Select an event category to annotate (e.g. ***hit***, because a hit usually spans less than 1 shot ).
-Then, press **"Play"** on the video.
-
+Press **"Play"** on the video.
 When you see a moment when a ***hit*** occurs, press the **"hit"** button on the screen.
 You will see the new ***hit*** label on the timeline.
-It is always allowed for a single shot to have multiple category labels.
+Note that multiple category labels can be assigned to a single shot.
 
 To remove the shot label, press **"Del"** on the keyboard or the small red cross icon (in the bottom).
 
@@ -195,8 +193,8 @@ annotation = {
 **VideoShotAnnotator** is distributed under CeCILL free software license.
 
 ## Citation
-If you use **VideoShotAnnotator**, please cite the following paper:
+If you use the **VideoShotAnnotator**, please cite the following paper:
 
-*Beat-Event Detection in Action Movie Franchises.* D.Potapov, M.Douze, J.Revaud, Z.Harchaoui, C.Schmid. arXiv, 2015
+*Inferring the structure of action movies.* D.Potapov, M.Douze, J.Revaud, Z.Harchaoui, C.Schmid. Wiced workshop, 2017
 
 
