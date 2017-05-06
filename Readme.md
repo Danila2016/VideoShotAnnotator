@@ -20,7 +20,7 @@ which further relies on a Javascript API. So, the tool requires an internet conn
 
 **VideoShotAnnotator** is an experiemental tool written along with the research on high-level event recognition in videos.
 
-##Introduction
+## Introduction
 
 The **VideoShotAnnotator** takes as input a video and its temporal partitioning.
 Each temporal segment - **shot** - can be annotated with one of the predefined categories.
