@@ -2,9 +2,7 @@
 
 <br>
 
-## UNDER CONSTRUCTION.
-## RELEASE SOON.
-## USE ON YOUR OWN RISK!
+## UNDER CONSTRUCTION. USE ON YOUR OWN RISK!
 
 <br>
 
@@ -16,7 +14,7 @@ single-shot and multi-shot events.
 feature-length videos with the precision of 1/5 sec.
 
 **VideoShotAnnotator** is written in Javascript and relies on the [CHAP Links library](http://almende.github.io/chap-links-library/),
-which further relies on a Javascript API which requires an internet connection.
+which further relies on a Javascript API. So, the tool requires an internet connection.
 
 **VideoShotAnnotator** works in Firefox and Chrome browsers.
 
@@ -145,12 +143,13 @@ if you change the browser or the computer.
 This is done through the **"Revert to server version"** button.
 Otherwise, last version saved in the local storage will be displayed.
 
-## Future work
+## Limitations
 
-Currently, the server functionality is under construction. 
+Currently, the server functionality is not available. 
 To take away the annotation from the browser, you need to implement it yourself. 
+If you know how to trigger a download of a json file directly from javascript, please, send me an example.
 
-##Annotation format
+## Annotation format
 
 Annotations are located at annotation/&lt;user&gt;/&lt;video&gt;.json
 
@@ -180,7 +179,7 @@ annotation = {
     // Ending frames of scenes (in the same manner as for shots).
     "scene_ends":[segm['ends'][-1]],
     
-    // At the moment: video framerate in the format "prop:fps=%0.3f";
+    // Video framerate in the format "prop:fps=%0.3f";
     // can also contain tags and properties separated by a single space;
     // properties start with 'prop:<name>='
     "video_tags": String,
