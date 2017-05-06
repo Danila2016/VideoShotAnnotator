@@ -189,6 +189,16 @@ function save_infos(event)
     blur(event);
 }
 
+// Show the annotation file
+function save_to_textbox(event)
+{
+    save_annotation(A);
+    var e = document.getElementById('save_textbox');
+    e.innerHTML = JSON.stringify(A);
+    SoftAlert.show("Saved data in the bottom of the page");
+    blur(event)
+}
+
 // Reload the annotation from the server
 function revert_infos(event)
 {
@@ -250,7 +260,7 @@ function showPermanentLink(event)
 // Load text file from server
 function loadText(url)
 {
-    var http = new XMLHttpRequest();
+    //var http = new XMLHttpRequest();
     var http = new XMLHttpRequest();
     http.open("GET", url, false);
     http.send();

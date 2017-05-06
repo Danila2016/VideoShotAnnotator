@@ -48,9 +48,9 @@ Assume one wants to annotate a video with two forging hammers (see link above). 
 * ***raise-left*** - when the left hammer is raised
 * ***raise-right*** - when the right hammer is raised
 
-The most intuitive shot annotation mode is the **Single shot annotation** mode.
+The easiest shot annotation mode is called **Single shot annotation**.
 In this mode, the annotation is performed for 1 shot and 1 category at a time.
-Tick the **Single shot annotation** checkbox to activate this mode.
+Make sure, that the **Single shot annotation** checkbox is ticked.
 
 Select an event category to annotate (e.g. ***hit***, because a hit usually spans less than 1 shot ).
 Then, press **"Play"** on the video.
@@ -68,8 +68,7 @@ Beware of a short delay when navigating this way.
 
 ## Multiple shot annotation
 
-"Multiple shot annotation" is the default annotation mode.
-In order to annotate the multi-shot events, you need to untick the **Single shot annotation** checkbox.
+In order to annotate multi-shot events, you need to untick the **Single shot annotation** checkbox.
 Now, when a category is selected, e.g. when you press the ***raise-left*** button,
 the shot label does not appear on the timeline.
 To start the event, press **"1"** on the keyboard. You will see ***raise-left*** appearing on the timeline.
@@ -147,7 +146,6 @@ Otherwise, last version saved in the local storage will be displayed.
 
 Currently, the server functionality is not available. 
 To take away the annotation from the browser, you need to implement it yourself. 
-If you know how to trigger a download of a json file directly from javascript, please, send me an example.
 
 ## Annotation format
 

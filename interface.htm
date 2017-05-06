@@ -28,6 +28,9 @@
 <h3 id="loading">Loading...</h3>
 
 <!-- Top buttons -->
+<button type="button" onclick="save_to_textbox(event)" title="Shows the annotation file in the bottom of the page">
+    Save
+</button>
 <button type="button" onclick="save_infos(event)" disabled title="Not available">
     Save to server
 </button>
@@ -187,6 +190,18 @@ Playback speed
         </div>
     </td>
     </tr></table>
+</div>
+
+<!-- Annotation file -->
+<div class="framedbox">
+    <b> Annotation file (save as video_name.json): </b>
+    <br/>
+<table width="100%"><tr>
+<td width="80%">
+    <span id="save_textbox">
+    </span>
+</td>
+</tr></table>
 </div>
 
 </body>

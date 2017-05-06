@@ -26,7 +26,7 @@ PropsWidget = function(node, categories, annotation, updateAnnotationCallback,
     this.new_class = undefined;
     
     // when True - annotate immediately (otherwise - wait for 1 or 2 keys)
-    this.perShotAnnotation = false;
+    this.perShotAnnotation = true;
 
     var me = this;
     var form = document.createElement('form');
@@ -121,6 +121,7 @@ PropsWidget = function(node, categories, annotation, updateAnnotationCallback,
 
     var e = document.createElement('input');
     e.type = 'checkbox';
+    e.checked = true;
     e.addEventListener('click', function(event){
         var target = event.target || event.srcElement;
         if (target.checked)
