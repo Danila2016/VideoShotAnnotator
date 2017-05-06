@@ -1,18 +1,28 @@
+# Video Shot Annotator
+
+<br>
+
+## UNDER CONSTRUCTION.
+## RELEASE SOON.
+## USE ON YOUR OWN RISK!
+
+<br>
+
 **VideoShotAnnotator** is a web-based tool for annotating shots and scenes in movies and amateur videos.
-It allows to annotate important structural elements of a movie: scene boundaries,
+It allows to annotate a number of temporal parts of a movie: scene boundaries,
 single-shot and multi-shot events.
 
-**VideoShotAnnotator** allows to quickly navigate
-different parts of feature-length videos with the precision of 1/5 sec.
+**VideoShotAnnotator** allows to quickly navigate and explore
+feature-length videos with the precision of 1/5 sec.
 
 **VideoShotAnnotator** is written in Javascript and relies on the [CHAP Links library](http://almende.github.io/chap-links-library/),
 which further relies on a Javascript API which requires an internet connection.
 
-**VideoShotAnnotator** works in Firefox and (probably) Chrome browsers.
+**VideoShotAnnotator** works in Firefox and Chrome browsers.
 
 **VideoShotAnnotator** is an experiemental tool written along with the research on high-level event recognition in videos.
 
-##Introduction##
+##Introduction
 
 The **VideoShotAnnotator** takes as input a video and its temporal partitioning.
 Each temporal segment - **shot** - can be annotated with one of the predefined categories.
@@ -26,12 +36,13 @@ The interface is currently tuned for annotation of long videos with the duration
 Alternatively, it is possible to specify any temporal partitioning of the video, including regular
 temporal chunks of N seconds. Nevertheless, the temporal segments will be further referred as shots.
 
-##Annotation tutorial##
+## Annotation tutorial
 
 This tutorial will introduce you to the web interface of the **VideoShotAnnotator**.
 
-To begin, open this link in a new tab: [short video](http://Danila2016.github.io/VideoShotAnnotator/interface.htm?user=default&video=forge).
+To begin, open this link in a new tab: [short video](http://Danila2016.github.io/VideoShotAnnotator/interface.htm?user=default&video=forge&zoom=subshot).
 Make sure, that you use one of the supported browsers (see above).
+If the page does not fit your screen, use zoom-in/zoom-out browser functionality (often located in the View menu tab).
 
 Assume one wants to annotate a video with two forging hammers (see link above). Assume also that there are 3 events of interest:
 
@@ -57,7 +68,7 @@ To go back 5 frames, use the **"Left arrow"** on the keyboard.
 It is also handy to drag the timeline to the right and navigate precisely.
 Beware of a short delay when navigating this way.
 
-##Multiple shot annotation##
+## Multiple shot annotation
 
 "Multiple shot annotation" is the default annotation mode.
 In order to annotate the multi-shot events, you need to untick the **Single shot annotation** checkbox.
@@ -71,7 +82,7 @@ Note, that if you forget to press **"Enter"**, the first shot loses the ***raise
 
 To remove the whole event, press the large red cross icon (in the bottom).
 
-##Special tag for difficult occurences##
+## Special tag for difficult occurences
 
 Each event can be marked as "hard". This label is normally used for the
 shots, that have an ambiguous category label or semantically hard to detect.
@@ -82,10 +93,9 @@ To mark the event as "hard", press the **"Toggle hard"** button or the **"H"** k
 Press **"Toggle hard"** again to remove the "hard" label.
 
 
-In the end the annotation will look [like this](http://Danila2016.github.io/VideoShotAnnotator/interface.htm?user=final&video=forge).
+In the end the annotation will look [like this](http://Danila2016.github.io/VideoShotAnnotator/interface.htm?user=final&video=forge&zoom=subshot).
 
-
-##Navigation##
+## Navigation
 
 There are numerous ways to navigate the movie.
 
@@ -97,13 +107,14 @@ There are numerous ways to navigate the movie.
 
 The video can be played **"Faster"** (2x speed) or **"Very Fast"** (4x).
 
-##Scene annotation##
+## Scene annotation
 
 Divide the video into scenes with the **"Begin scene"** button.
 Remove the scene change point with the **"red cross icon"** near the button.
 Note, that scene changes are always aligned with the shots.
 
-##Loading a movie##
+## Loading a movie
+
 **VideoShotAnnotator** takes as an input a video together with a set of metadata:
 
 * total number of frames
@@ -117,13 +128,13 @@ chunks, instead of shots.
 
 A movie has to be encoded with x264 codec and in .mp4 format.
 
-##Adaptation to your own task##
+## Adaptation to your own task
 
 1. Modify the list of categories in js/interface.js
 2. Prepare the empty annotations (see annotation/default for an example and the annotation format below)
 3. Convert the videos into the correct format (see above)
 
-##Saving the annotation##
+## Saving the annotation
 
 The annotation is automatically saved inside the browser every 30 sec.
 It relies on the persistent Local Storage of the browser.
@@ -134,12 +145,13 @@ if you change the browser or the computer.
 This is done through the **"Revert to server version"** button.
 Otherwise, last version saved in the local storage will be displayed.
 
-##TODO##
+## Future work
 
 Currently, the server functionality is under construction. 
 To take away the annotation from the browser, you need to implement it yourself. 
 
-##Annotation format##
+##Annotation format
+
 Annotations are located at annotation/&lt;user&gt;/&lt;video&gt;.json
 
 Annotations are stored in JSON format as an associative array.
@@ -180,10 +192,12 @@ annotation = {
     "scene_characters":[""]
 }
 ```
-##License##
+
+## License
+
 **VideoShotAnnotator** is distributed under CeCILL free software license.
 
-##Citation##
+## Citation
 If you use **VideoShotAnnotator**, please cite the following paper:
 
 *Beat-Event Detection in Action Movie Franchises.* D.Potapov, M.Douze, J.Revaud, Z.Harchaoui, C.Schmid. arXiv, 2015
