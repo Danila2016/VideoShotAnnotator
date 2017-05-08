@@ -22,6 +22,8 @@ which further relies on a Javascript API. So, the tool requires an internet conn
 
 ## Introduction
 
+![Screenshot of the Video Shot Annotator](https://github.com/Danila2016/VideoShotAnnotator/blob/master/help_images/screenshot1.png?raw=true)
+
 The **VideoShotAnnotator** takes as input a video and its temporal partitioning.
 Each temporal segment - **shot** - can be annotated with one of the predefined categories.
 
@@ -64,6 +66,8 @@ To go back 5 frames, use the **"Left arrow"** on the keyboard.
 It is also handy to drag the timeline to the right and navigate precisely.
 Beware of a short delay when navigating this way.
 
+![Video with annotated "hit" events](https://github.com/Danila2016/VideoShotAnnotator/blob/master/help_images/screenshot2.png?raw=true)
+
 ## Multiple shot annotation
 
 In order to annotate multi-shot events, you need to untick the **Single shot annotation** checkbox.
@@ -89,6 +93,9 @@ Press **"Toggle hard"** again to remove the "hard" label.
 
 
 In the end the annotation will look [like this](http://Danila2016.github.io/VideoShotAnnotator/interface.htm?user=final&video=forge&zoom=subshot).
+Screenshot:
+
+![Screenshot of the annotated video](https://github.com/Danila2016/VideoShotAnnotator/blob/master/help_images/screenshot3.png?raw=true)
 
 ## Navigation
 
@@ -196,5 +203,14 @@ annotation = {
 If you use the **VideoShotAnnotator**, please cite the following paper:
 
 *Inferring the structure of action movies.* D.Potapov, M.Douze, J.Revaud, Z.Harchaoui, C.Schmid. Wiced workshop, 2017
+<br/>
+[Preprint](https://hal.inria.fr/hal-01183588/file/actionmovies.pdf)
 
-
+```
+@inproceedings{Potapov2017inferring,
+    title = {{Inferring the structure of action movies}},
+    author = {Potapov, Danila and Douze, Matthijs and Revaud, Jerome and Harchaoui, Zaid and Schmid, Cordelia},
+    booktitle = {{Eurographics Workshop on Intelligent Cinematography and Editing}},
+    year = {2017},
+}
+```
