@@ -1,11 +1,5 @@
 # Video Shot Annotator
 
-<br>
-
-## UNDER CONSTRUCTION!
-
-<br>
-
 **VideoShotAnnotator** is a web-based tool for annotating shots and scenes in movies and amateur videos.
 It allows to annotate a number of temporal parts of a movie: scene boundaries,
 single-shot and multi-shot events.
@@ -208,9 +202,9 @@ If you use the **VideoShotAnnotator**, please cite the following paper:
 
 ```
 @inproceedings{Potapov2017inferring,
-    title = {{Inferring the structure of action movies}},
-    author = {Potapov, Danila and Douze, Matthijs and Revaud, Jerome and Harchaoui, Zaid and Schmid, Cordelia},
-    booktitle = {{Eurographics Workshop on Intelligent Cinematography and Editing}},
-    year = {2017},
+title = {{Inferring the structure of action movies}},
+author = {Potapov, Danila and Douze, Matthijs and Revaud, Jerome and Harchaoui, Zaid and Schmid, Cordelia},
+booktitle = {{Eurographics Workshop on Intelligent Cinematography and Editing}},
+year = {2017},
 }
 ```
